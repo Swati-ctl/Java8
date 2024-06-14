@@ -9,7 +9,7 @@ public class PredicateOnEmployeeAge {
 		// TODO Auto-generated method stub
 		ArrayList<Employee> al = new ArrayList<Employee>();
 		populate(al);
-		Predicate<Employee> p = e -> e.age > 30;
+		Predicate<Employee> p = (e -> e.age > 30);
 		for (Employee e : al) {
 			if (p.test(e)) {
 				System.out.println(e.name);

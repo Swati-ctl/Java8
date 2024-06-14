@@ -10,3 +10,4 @@ public class ConsumerMovieInfoChain {
 		c1.andThen(c2).andThen(c3).accept(new Movie("Bahubali"));
 	}
 }
+
